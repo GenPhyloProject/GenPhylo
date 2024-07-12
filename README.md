@@ -1,6 +1,6 @@
 # GenPhylo: Generating Data on Phylogenetic trees
 
-### Authors: Marta Casanellas, Martí Cortada, Adrià Dieguez
+### Authors: Marta Casanellas, Martí Cortada, Adrià Diéguez
 
 ---
 
