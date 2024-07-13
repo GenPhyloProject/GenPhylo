@@ -12,20 +12,22 @@ The user has two options depending on which arguments are chosen. Both of them n
 
 The program generates a set of transition matrices according to the input tree and its branch lengths. From these matrices, $N$ different alignments of length $L$ are simulated under the general Markov model.
 A root distribution input parameter also needs to be passed: we can impose a random distribution or a specific one. 
-The outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) can be named using the name_experiment input parameter and  are saved in the output_files directory 
+The outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) can be named using the experiment_name input parameter and  are saved in the output_files directory 
 
 An example with $N = 5$ and $L=1000$:
 
 For a random root distribution:
 ```diff
-python3 main.py <tree.txt> 5 1000 random <name_experiment>
+python3 main.py <tree.txt> 5 1000 random <experiment_name>
 ```
 For a specific root distribution (note that A,G,C,T must be values that sum up to 1)
 ```diff
 python3 main.py <tree.txt> 5 1000 "[A,G,C,T]" <name_experiment>
 ```
 
-▶️ **Option 2: Generate FASTA files with alignments of given lengths $L_1,...,L_d$ given a tree in a Newick format**
+▶️ **Option 2: Generate FASTA files with alignments of given lengths $L_1,...,L_d$ given a Newick tree**
+
+
 
 For example, for $L_1 = 500$, $L_2 = 1000$ and $L_3 = 10000$, provided also a Newick tree in a ```.txt``` file and an experiment's name to save the results; just type
 
