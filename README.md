@@ -10,9 +10,9 @@ The user has two options depending on which arguments are chosen. Both of them n
 
 ▶️ **Option 1: Generate $N$ FASTA files with alignments of length $L$ given a Newick tree**
 
-The program generates a set of transition matrices according to the input tree and its branch lengths. From these matrices, $N$ different alignments of length $L$ are simulated under the general Markov model.
+The program generates a set of transition matrices according to the input tree <tree.txt> and its branch lengths. From these matrices, $N$ different alignments of length $L$ are simulated
 A root distribution input parameter also needs to be passed: we can impose a random distribution or a specific one. 
-The outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) can be named using the experiment_name input parameter and  are saved in the output_files directory 
+The outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) can be named using the <experiment_name> input parameter and  are saved in the output_files directory 
 
 An example with $N = 5$ and $L=1000$:
 
@@ -22,21 +22,23 @@ python3 GenPhylo.py <tree.txt> 5 1000 random <experiment_name>
 ```
 Using a specific root distribution (note that A,G,C,T must be values that sum up to 1)
 ```diff
-python3 GenPhylo.py <tree.txt> 5 1000 "[A,G,C,T]" <name_experiment>
+python3 GenPhylo.py <tree.txt> 5 1000 "[A,G,C,T]" <experiment_name>
 ```
 
 ▶️ **Option 2: Generate FASTA files with alignments of given lengths $L_1,...,L_d$ given a Newick tree**
 
+Working very similarly as the first option, the second one allows to generate aligments of different length. The program generates a set of transition matrices according to the input tree <tree.txt> and its branch lengths and from these matrices, alignments of length  $L_1,...,L_d$ are generated (we can add as many lengths as alignments we want to generate. ). The outputs are saved the same way as described for Option 1.
 
+An example, for $L_1 = 500$, $L_2 = 1000$ and $L_3 = 10000$
 
-For example, for $L_1 = 500$, $L_2 = 1000$ and $L_3 = 10000$, provided also a Newick tree in a ```.txt``` file and an experiment's name to save the results; just type
-
+Using a random root distribution:
 ```diff
-python3 main.py <tree.txt> L500 L1000 L10000 <name_experiment>
+python3 main.py <tree.txt> L500 L1000 L10000 random <experiment_name>
 ```
-
-where we can add as many lengths as alignments we want to generate. The previous command-line generates $3$ MSAs of lengths $500$, $1000$ and $10000$, respectively, all of them evolving on the tree given in ```tree.txt``` under the general Markov model. The output result is a set of $3$ ```.fasta``` files.
-
+Using a specific root distribution (note that A,G,C,T must be values that sum up to 1)
+```diff
+python3 main.py <tree.txt> L500 L1000 L10000 "[A,G,C,T]" <experiment_name>
+```
 ⚠️ Note that in this case, sequence lengths are preceeded by an $L$.
 
 
