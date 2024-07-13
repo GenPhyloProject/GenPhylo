@@ -16,11 +16,11 @@ The outputs (a .txt file with the transition matrices and a .tar with the .FASTA
 
 An example with $N = 5$ and $L=1000$:
 
-For a random root distribution:
+Using a random root distribution:
 ```diff
 python3 GenPhylo.py <tree.txt> 5 1000 random <experiment_name>
 ```
-For a specific root distribution (note that A,G,C,T must be values that sum up to 1)
+Using a specific root distribution (note that A,G,C,T must be values that sum up to 1)
 ```diff
 python3 GenPhylo.py <tree.txt> 5 1000 "[A,G,C,T]" <name_experiment>
 ```
