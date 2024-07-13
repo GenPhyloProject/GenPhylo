@@ -18,11 +18,11 @@ An example with $N = 5$ and $L=1000$:
 
 For a random root distribution:
 ```diff
-python3 main.py <tree.txt> 5 1000 random <experiment_name>
+python3 GenPhylo.py <tree.txt> 5 1000 random <experiment_name>
 ```
 For a specific root distribution (note that A,G,C,T must be values that sum up to 1)
 ```diff
-python3 main.py <tree.txt> 5 1000 "[A,G,C,T]" <name_experiment>
+python3 GenPhylo.py <tree.txt> 5 1000 "[A,G,C,T]" <name_experiment>
 ```
 
 ▶️ **Option 2: Generate FASTA files with alignments of given lengths $L_1,...,L_d$ given a Newick tree**
