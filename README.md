@@ -43,7 +43,7 @@ python3 main.py <tree.txt> L500 L1000 L10000 "[A,G,C,T]" <experiment_name>
 
 ---
 
-This repository includes a .pdf file that describes how we verified the precision of our alignments simulator by using the phylogenetic software IQ-TREE.
+This repository includes the file IQ-TREE_analysis.pdf that describes how we verified the precision of our alignments simulator by using the phylogenetic software IQ-TREE.
 
 
 
