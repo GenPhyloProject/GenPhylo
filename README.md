@@ -38,6 +38,8 @@ python3 main.py <tree.txt> L500 L1000 L10000 random <experiment_name>
 Using a specific root distribution (note that A,G,C,T must be values that sum up to 1)
 ```diff
 python3 main.py <tree.txt> L500 L1000 L10000 "[A,G,C,T]" <experiment_name>
+
+---
 ```
 ⚠️ Note that in this case, sequence lengths are preceeded by an $L$.
 
