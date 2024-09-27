@@ -6,7 +6,7 @@
 
 **GenPhylo** generates synthetic alignments on a phylogenetic tree with given branch lengths.
 
-### **<u>You can obtain the results by cloning this repository and using the command line to run the required scripts.</u>**
+### **1️⃣ You can obtain the results by cloning this repository and using the command line to run the required scripts.**
 
 The user has two options depending on which arguments are chosen. Both of them need to take as input a tree in the Newick format (with nodes of any degree) with annotated branch lengths.
 
@@ -49,6 +49,46 @@ This repository includes the file IQ-TREE_analysis.pdf that describes how we ver
 
 ---
 
+### **2️⃣ You can obtain the results by installing our python package.**
+
+```diff
+pip install genphylo
+```
+
+⚠️ Make sure you are using the latest version.
+
+Then, the following code performs the same outputs as the previous options:
+```python
+# Import our package
+from GenPhylo.utils.alignments_generation import *
+
+tree =           # name of your Newick file
+L =              # length
+N =              # number of different alignments
+root_distr =     # root distribution ("random" or specified by the user)
+name =           # name for the experiment
+
+# Calling a package function that generates the N alignments
+get_N_alignments(tree, L, N, root_distr, name)
+
+lengths =        # list of lengths
+root_distr =     # root distribution ("random" or specified by the user, e.g. [0.3, 0.2, 0.15, 0.35])
+name =           # name for the experiment
+
+# Calling a package function that generates the alignments given the lengths
+get_alignments_by_lengths(tree, lengths, root_distr, name)
+```
+
+---
+
 ⚙️ This software is developped under de GNU General Public License v3
+
+---
+
+In the case of using our code, either for your experiments or to develop future research, cite it:
+```
+TO BE FILLED!
+```
+
 
 
