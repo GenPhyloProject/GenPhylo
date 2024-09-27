@@ -4,7 +4,10 @@
 
 ---
 
-**GenPhylo** generates synthetic alignments on a phylogenetic tree with given branch lengths.
+**GenPhylo** generates synthetic alignments on a phylogenetic tree with given branch lengths. The user is provided with two options to obtain the results:
+- Clone the repository and use the command line.
+- Install the Python package we developed and use its functions.
+In the following lines, we provide a more detailed explanation.
 
 ### **1️⃣ You can obtain the results by cloning this repository and using the command line to run the required scripts.**
 
@@ -49,7 +52,7 @@ This repository includes the file IQ-TREE_analysis.pdf that describes how we ver
 
 ---
 
-### **2️⃣ You can obtain the results by installing our python package.**
+### **2️⃣ You can obtain the results by installing our Python package.**
 
 ```diff
 pip install genphylo
@@ -57,7 +60,7 @@ pip install genphylo
 
 ⚠️ Make sure you are using the latest version.
 
-Then, the following code performs the same outputs as the previous options:
+The following code produces the same outputs as the previous options:
 ```python
 # Import our package
 from GenPhylo.utils.alignments_generation import *
@@ -81,11 +84,11 @@ get_alignments_by_lengths(tree, lengths, root_distr, name)
 
 ---
 
-⚙️ This software is developped under de GNU General Public License v3
+⚙️ This software is developped under de GNU General Public License v3.
 
 ---
 
-In the case of using our code, either for your experiments or to develop future research, cite it:
+If you use our code, either for your experiments or to develop future research, please cite it:
 ```
 TO BE FILLED!
 ```
