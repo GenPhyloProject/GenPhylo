@@ -65,7 +65,7 @@ The following code produces the same outputs as the previous options:
 # Import our package
 from GenPhylo.utils.alignments_generation import *
 
-tree =           # name of your Newick file
+tree =           # path of your Newick file
 L =              # length
 N =              # number of different alignments
 root_distr =     # root distribution ("random" or specified by the user)
