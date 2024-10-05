@@ -6,7 +6,7 @@
 
 We introduce **GenPhylo**, an open-source Python module for simulating genetic data along a phylogeny avoiding the restriction of continuous-time Markov processes. **GenPhylo** uses directly a general Markov model and therefore naturally incorporates heterogeneity across lineages. 
 
-The module has been developed in Python3 and provides an algorithm that can be incorporated in other simulation software.
+The module has been developed in Python3 and provides an algorithm that can be incorporated in other simulation software. 
 
 ### **Installation and requirements.**
 
@@ -15,6 +15,8 @@ You can install **GenPhylo** using pip
 ```diff
 pip install genphylo
 ```
+Current version of GenPhylo is 1.0.0.
+
 **GenPhylo** has several dependencies, please ensure you run
 
 ```diff
@@ -23,9 +25,9 @@ pip install -r requirements.txt
 
 ### **Using GenPhylo**
 
-Given a tree topology, the branch lengths and the alignment lengths, **GenPhylo** generates GMM parameters and the corresponding alignments, saved in separated output files. Our package includes different options for generating the alignments, such as get_N_alignments(), which generates N alignments of a fixed length, or get_alignments_by_lengths(), which generates alignments of different lengths.
+Given a tree topology, the branch lengths and the alignment lengths, **GenPhylo** generates GMM parameters and the corresponding alignments, saved in separated output files. Our package includes different options for generating the alignments, such as get_N_alignments(), which generates N alignments of a fixed length, or get_alignments_by_lengths(), which generates alignments of different lengths. Below we provide examples of how to use both functions.
 
-- **get_N_alignments()**
+**get_N_alignments()**
 
 ```python
 # Import GenPhylo package
@@ -40,7 +42,7 @@ name = 'experiment1'    # output name
 # Calling the function that generates the N alignments
 get_N_alignments(tree, L, N, root_distr, name)
 ```
-- **get_alignments_by_lengths()**
+**get_alignments_by_lengths()**
 
 ```python
 # Import GenPhylo package
@@ -95,32 +97,6 @@ python3 GenPhylo.py <tree.txt> L500 L1000 L10000 "[A,G,C,T]" <experiment_name>
 This repository includes the file IQ-TREE_analysis.pdf that describes how we verified the precision of our alignments simulator by using the phylogenetic software IQ-TREE.
 
 ---
-
-### **2️⃣ You can obtain the results by installing our Python package.**
-
-```diff
-pip install genphylo
-```
-
-⚠️ Make sure you are using the latest version.
-
-The following code produces the same outputs as the previous options:
-```python
-# Import our package
-from GenPhylo.utils.alignments_generation import *
-
-tree =           # path of your Newick file
-L =              # length
-N =              # number of different alignments
-root_distr =     # root distribution ("random" or specified by the user)
-name =           # name for the experiment
-
-# Calling a package function that generates the N alignments
-get_N_alignments(tree, L, N, root_distr, name)
-
-
-
-
 ---
 
 ⚙️ This software is developped under de GNU General Public License v3.
@@ -131,6 +107,3 @@ If you use our code, either for your experiments or to develop future research, 
 ```
 TO BE FILLED!
 ```
-
-
-
