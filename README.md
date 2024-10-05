@@ -8,6 +8,8 @@ We introduce **GenPhylo**, an open-source Python module for simulating genetic d
 
 ### **Installation and requirements.**
 
+You can install GenPhylo using pip
+
 ```diff
 pip install genphylo
 ```
