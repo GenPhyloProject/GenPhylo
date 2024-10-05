@@ -24,7 +24,7 @@ pip install -r requirements.txt
 Given a tree topology, branch lengths, and a sequence length, GenPhylo generates GMM parameters and the corresponding alignments, saved in separated output files. Our package includes different options for generating the alignments, such as get_N_alignments(), which generates N alignments of a fixed length, or get_alignments_by_lengths(), which generates alignments of
 different lengths.
 
-- #####**get_N_alignments()**
+- #####**get_N_alignments()#####**
 
 ```python
 # Import GenPhylo package
@@ -33,13 +33,13 @@ from GenPhylo.utils.alignments_generation import *
 tree = 'tree.txt'       # path of your Newick file
 L = 1000                # Alignment length
 N = 50                  # Number of alignments
-root_distr = "random"   # root distribution (can also be specified by the user, e.g. root_distr = [0.22, 0.24, 0.28, 0.26])
+root_distr = 'random'   # root distribution (can also be specified by the user, e.g. root_distr = [0.22, 0.24, 0.28, 0.26])
 name = 'experiment1'    # name for the experiment
 
 # Calling the function that generates the N alignments
 get_N_alignments(tree, L, N, root_distr, name)
 ```
-- #####**get_alignments_by_lengths()**
+- #####**get_alignments_by_lengths()#####**
 
 ```python
 # Import GenPhylo package
@@ -47,7 +47,7 @@ from GenPhylo.utils.alignments_generation import *
 
 tree = 'tree.txt'               # path of your Newick file
 lengths = [500, 1000, 10000]    # list of alignment lengths
-root_distr =                    # root distribution (can also be specified by the user, e.g. root_distr = [0.22, 0.24, 0.28, 0.26])
+root_distr = 'random'                 # root distribution (can also be specified by the user, e.g. root_distr = [0.22, 0.24, 0.28, 0.26])
 name = 'experiment2'            # name for the experiment
 
 # Calling the function that generates the alignments given the lengths
