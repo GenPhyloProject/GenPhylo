@@ -19,10 +19,12 @@ pip install genphylo
 pip install -r requirements.txt
 ```
 
-### **1️⃣GenPhylo functions.**
+### **GenPhylo functions**
 
-Given a tree topology, branch lengths, and a sequence length, GenPhylo generates GMM parameters and the corresponding alignments, saved in sep- arated output files. Our package includes different options for generating the alignments, such as get N alignments(), which generates N alignments of a fixed length, or get alignments by lengths(), which generates alignments of
+Given a tree topology, branch lengths, and a sequence length, GenPhylo generates GMM parameters and the corresponding alignments, saved in sep- arated output files. Our package includes different options for generating the alignments, such as get_N_alignments(), which generates N alignments of a fixed length, or get alignments by lengths(), which generates alignments of
 different lengths.
+
+- get_N_alignments()
 
 ```python
 # Import our package
@@ -36,6 +38,7 @@ name = 'experiment'          # name for the experiment
 
 # Calling the function that generates the N alignments
 get_N_alignments(tree, L, N, root_distr, name)
+```
 
 The user has two options depending on which arguments are chosen. Both of them need to take as input a tree in the Newick format (with nodes of any degree) with annotated branch lengths.
 
@@ -106,7 +109,7 @@ name =           # name for the experiment
 
 # Calling a package function that generates the alignments given the lengths
 get_alignments_by_lengths(tree, lengths, root_distr, name)
-```
+
 
 ---
 
