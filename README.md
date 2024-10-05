@@ -11,7 +11,7 @@ We introduce **GenPhylo**, an open-source Python module for simulating genetic d
 ```diff
 pip install genphylo
 ```
-GenPhylo has several dependencies, please ensure to run
+GenPhylo has several dependencies, please ensure you run
 
 ```diff
 pip install -r requirements.txt
