@@ -1,7 +1,14 @@
 import sys
+import os
 
 def reading():
     # GenGM options
+
+    output_dir = './output_files'
+    # Check if the directory exists, if not, create it
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
     tree = sys.argv[1]
     case = 1
     num_lengths = len(sys.argv)
