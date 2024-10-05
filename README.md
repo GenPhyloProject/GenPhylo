@@ -1,4 +1,4 @@
-# GenPhylo: Generating Data on Phylogenetic trees
+# GenPhylo: Generating heterogeneous data on gene trees
 
 ### Authors: Marta Casanellas, Martí Cortada, Adrià Diéguez
 
