@@ -4,10 +4,13 @@
 
 ---
 
-**GenPhylo** generates synthetic alignments on a phylogenetic tree with given branch lengths. The user is provided with two options to obtain the results:
-- Clone the repository and use the command line.
-- Install the Python package we developed and use its functions.
-In the following lines, we provide a more detailed explanation.
+We introduce **GenPhylo**, an open-source Python module for simulating genetic data along a phylogeny avoiding the restriction of continuous-time Markov processes.
+
+### **You can install GenPhylo using pip.**
+
+```diff
+pip install genphylo
+```
 
 ### **1️⃣ You can obtain the results by cloning this repository and using the command line to run the required scripts.**
 
