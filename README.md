@@ -10,7 +10,7 @@ The module has been developed in Python3 and provides an algorithm that can be i
 
 ### **Installation and requirements.**
 
-Current version of **GenPhylo** is 1.0.0.You can install the package using pip
+Current version of **GenPhylo** is 1.0.0. You can install the package using pip
 
 ```diff
 pip install GenPhylo
@@ -20,6 +20,7 @@ pip install GenPhylo
 ```diff
 pip install -r requirements.txt
 ```
+---
 
 ### **Using GenPhylo**
 
