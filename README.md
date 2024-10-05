@@ -8,18 +8,34 @@ We introduce **GenPhylo**, an open-source Python module for simulating genetic d
 
 ### **Installation and requirements.**
 
-You can install GenPhylo using pip
+You can install **GenPhylo** using pip
 
 ```diff
 pip install genphylo
 ```
-GenPhylo has several dependencies, please ensure you run
+**GenPhylo** has several dependencies, please ensure you run
 
 ```diff
 pip install -r requirements.txt
 ```
 
-### **1️⃣ You can obtain the results by cloning this repository and using the command line to run the required scripts.**
+### **1️⃣GenPhylo functions.**
+
+Given a tree topology, branch lengths, and a sequence length, GenPhylo generates GMM parameters and the corresponding alignments, saved in sep- arated output files. Our package includes different options for generating the alignments, such as get N alignments(), which generates N alignments of a fixed length, or get alignments by lengths(), which generates alignments of
+different lengths.
+
+```python
+# Import our package
+from GenPhylo.utils.alignments_generation import *
+
+tree = 'tree.txt'   # path of your Newick file
+L = 1000            # Alignment length
+N = 50              # Number of alignments
+root_distr = "random"    # root distribution (can also be specified by the user, example: root_distr = [0.3, 0.2, 0.15, 0.35])
+name = 'experiment'          # name for the experiment
+
+# Calling the function that generates the N alignments
+get_N_alignments(tree, L, N, root_distr, name)
 
 The user has two options depending on which arguments are chosen. Both of them need to take as input a tree in the Newick format (with nodes of any degree) with annotated branch lengths.
 
