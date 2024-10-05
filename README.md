@@ -10,13 +10,11 @@ The module has been developed in Python3 and provides an algorithm that can be i
 
 ### **Installation and requirements.**
 
-You can install **GenPhylo** using pip
+Current version of **GenPhylo** is 1.0.0.You can install the package using pip
 
 ```diff
-pip install genphylo
+pip install GenPhylo
 ```
-Current version of GenPhylo is 1.0.0.
-
 **GenPhylo** has several dependencies, please ensure you run
 
 ```diff
