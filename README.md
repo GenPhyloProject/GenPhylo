@@ -55,14 +55,13 @@ name = 'experiment2'            # output name
 # Calling the function that generates the alignments given the lengths
 get_alignments_by_lengths(tree, lengths, root_distr, name)
 ```
-
-The user has two options depending on which arguments are chosen. Both of them need to take as input a tree in the Newick format (with nodes of any degree) with annotated branch lengths.
+In each case, the outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) are named using the <experiment_name>  parameter and are saved in a directory called output_files (if the folder does not already exist, the package will automatically create it).
 
 ▶️ **Option 1: Generate $N$ FASTA files with alignments of length $L$ given a Newick tree**
 
 The program generates a set of transition matrices according to the input tree <tree.txt> and its branch lengths. From these matrices, $N$ different alignments of length $L$ are simulated
 A root distribution input parameter also needs to be passed: we can impose a random distribution or a specific one. 
-The outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) can be named using the <experiment_name> input parameter and  are saved in the output_files directory 
+
 
 An example with $N = 5$ and $L=1000$:
 
