@@ -24,7 +24,9 @@ pip install -r requirements.txt
 
 ### **Using GenPhylo**
 
-Given a tree topology, the branch lengths and the alignment lengths, **GenPhylo** generates GMM parameters and the corresponding alignments, saved in separated output files. Our package includes different options for generating the alignments, such as get_N_alignments(), which generates N alignments of a fixed length, or get_alignments_by_lengths(), which generates alignments of different lengths. Below we provide examples of how to use both functions.
+Given a tree topology, the branch lengths and the alignment lengths, **GenPhylo** generates GMM parameters and the corresponding alignments, saved in separated output files. The package includes different options for generating the alignments, such as get_N_alignments(), which generates N alignments of fixed length, or get_alignments_by_lengths(), which generates alignments of different lengths. 
+
+Below we provide examples of how to use both functions.
 
 **get_N_alignments()**
 
@@ -55,7 +57,9 @@ name = 'experiment2'            # output name
 # Calling the function that generates the alignments given the lengths
 get_alignments_by_lengths(tree, lengths, root_distr, name)
 ```
-In each case, the outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) are named using the <experiment_name>  parameter and are saved in a directory called output_files (if the folder does not already exist, the package will automatically create it).
+In each case, the outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) are named using the **experiment_name**  parameter and are saved in a directory called **output_files** (if the folder does not already exist, the package will automatically create it).
+
+Additionally, the repository includes an example of the `output_files` directory, as well as an example of the `tree.txt` file for reference.
 
 ▶️ **Option 1: Generate $N$ FASTA files with alignments of length $L$ given a Newick tree**
 
