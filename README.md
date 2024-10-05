@@ -6,10 +6,15 @@
 
 We introduce **GenPhylo**, an open-source Python module for simulating genetic data along a phylogeny avoiding the restriction of continuous-time Markov processes.
 
-### **You can install GenPhylo using pip.**
+### **Installation and requirements.**
 
 ```diff
 pip install genphylo
+```
+GenPhylo has several dependencies, please ensure to run
+
+```diff
+pip install -r requirements.txt
 ```
 
 ### **1️⃣ You can obtain the results by cloning this repository and using the command line to run the required scripts.**
