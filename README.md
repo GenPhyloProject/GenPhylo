@@ -63,20 +63,16 @@ In each case, the outputs (a .txt file with the transition matrices and a .tar w
 
 Additionally, the repository includes an example of the `output_files` directory, as well as an example of the `tree.txt` file for reference.
 
-
-
 ---
 
 This repository includes the file IQ-TREE_analysis.pdf that describes how we verified the precision of our alignments simulator by using the phylogenetic software IQ-TREE.
 
 ---
----
-
-⚙️ This software is developped under de GNU General Public License v3.
-
----
+If you encounter any bugs or have questions, please submit them under the Issues tab at: https://github.com/GenPhyloProject/GenPhylo/issues.
 
 If you use our code, either for your experiments or to develop future research, please cite it:
 ```
 TO BE FILLED!
 ```
+---
+⚙️ This software is developped under de GNU General Public License v3.
