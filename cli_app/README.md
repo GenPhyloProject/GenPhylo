@@ -1,3 +1,5 @@
+# Executing GenPhylo from the terminal
+
 ▶️ **Option 1: Generate $N$ FASTA files with alignments of length $L$ given a Newick tree**
 
 The program generates a set of transition matrices according to the input tree <tree.txt> and its branch lengths. From these matrices, $N$ different alignments of length $L$ are simulated. A root distribution input parameter also needs to be passed: we can impose a random distribution or a specific one. 
