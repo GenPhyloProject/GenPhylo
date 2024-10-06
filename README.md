@@ -64,7 +64,7 @@ In each case, the outputs (a .txt file with the transition matrices and a .tar w
 Additionally, the repository includes an example of the `output_files` directory, as well as an example of the `tree.txt` file for reference.
 
 ---
-Within the `cli_app` directory of this repository, we provide a command-line interface (CLI) implementation of the **GenPhylo** package. This allows you to execute **GenPhylo** directly from the terminal without requiring package installation. For detailed instructions on how to run **GenPhylo** via the CLI, please refer to the `README` file located in the `cli_app` folder.
+Within the `cli_app` directory of this repository, we provide a command-line interface (CLI) implementation of the **GenPhylo** package. This allows you to execute **GenPhylo** directly from the terminal without requiring package installation. For detailed instructions on how to run **GenPhylo** via the CLI, please refer to the `README.md` file located in the `cli_app` folder.
 
 This repository also includes the file `IQ-TREE_analysis.pdf` that describes how we verified the precision of our alignments simulator by using the phylogenetic software **IQ-TREE**.
 
@@ -82,4 +82,4 @@ If you use our code, either for your experiments or to develop future research, 
 }
 ```
 ---
-⚙️ This software is developed under thr GNU General Public License v3.
+⚙️ This software is developed under the GNU General Public License v3.
