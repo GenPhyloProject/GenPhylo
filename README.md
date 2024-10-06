@@ -72,7 +72,13 @@ If you encounter any bugs or have questions, please submit them under the Issues
 
 If you use our code, either for your experiments or to develop future research, please cite it:
 ```
-TO BE FILLED!
+@misc{GenPhylo,
+  author       = {Cortada, Martí and Diéguez, Adrià and Casanellas, Marta},
+  title        = {{GenPhylo project repository}},
+  year         = {2024},
+  url          = {https://github.com/GenPhyloProject/GenPhylo},
+  note         = {GitHub repository}
+}
 ```
 ---
-⚙️ This software is developped under de GNU General Public License v3.
+⚙️ This software is developed under thr GNU General Public License v3.
