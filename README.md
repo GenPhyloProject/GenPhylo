@@ -61,14 +61,12 @@ get_alignments_by_lengths(tree, lengths, root_distr, name)
 ```
 In each case, the outputs (a .txt file with the transition matrices and a .tar with the .FASTA files corresponding to the simulated alignments) are named using the `experiment_name`  parameter and are saved in a directory called `output_files` (if the folder does not already exist, the package will automatically create it).
 
-Additionally, the repository includes an example of the `output_files` directory, as well as an example of the `tree.txt` file for reference.
+Additionally, the repository includes an example of the `output_files` directory, as well as an example of the `tree.txt` file for reference. This repository also includes the file `IQ-TREE_analysis.pdf` that describes how we verified the precision of our alignments simulator by using the phylogenetic software **IQ-TREE**.
 
 ---
 
 ### **CLI implementation**
 Within the `cli_app` directory of this repository, we provide a command-line interface (CLI) implementation of the **GenPhylo** package. This allows you to execute **GenPhylo** directly from the terminal without requiring package installation. For detailed instructions on how to run **GenPhylo** via the CLI, please refer to the `README.md` file located in the `cli_app` folder.
-
-This repository also includes the file `IQ-TREE_analysis.pdf` that describes how we verified the precision of our alignments simulator by using the phylogenetic software **IQ-TREE**.
 
 ---
 ### **Contributing and Citation**
