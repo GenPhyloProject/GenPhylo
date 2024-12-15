@@ -35,12 +35,18 @@ python3 GenPhylo.py <tree.txt> L500 L1000 L10000 "[A,G,C,T]" <experiment_name>
 ```
 ⚠️ Note that in this case, sequence lengths are preceeded by an $L$.
 
+---
+
 ▶️ To get a quick overview of how to use GenPhylo, simply run the following command:
 
-python3 GenPhylo.py --help  
+```diff
+python3 GenPhylo.py --help
+```
 
 or
 
-python3 GenPhylo.py -h  
+```diff
+python3 GenPhylo.py -h
+```
 
 This will display a brief description of the program, including its features, available command-line arguments, and usage examples.
