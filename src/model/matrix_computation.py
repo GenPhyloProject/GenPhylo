@@ -37,7 +37,7 @@ def get_M1(distribution, dir_constant, exp_minus_l, sq_det_D):
     return M1, detM1, res, new_distribution
 
 
-def get_M2(new_distribution,d2,dir_constant):
+def get_M2(new_distribution,d2,dir_constant,detM1,exp_minus_l):
     """
     Metropolis - Hastings implementation to get M2
     """
@@ -45,6 +45,7 @@ def get_M2(new_distribution,d2,dir_constant):
     P = np.zeros((4,4))
     iteration = 0
     iter = True
+    dir_constant = (exp_minus_l)/(4*detM1) 
 
     while iter and iteration < 50:
         # Random Markov matrix generation

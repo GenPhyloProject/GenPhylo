@@ -35,7 +35,7 @@ def alpha(new_distribution, Q, i, k):
     ratio = new_distribution[k] * Q[k, i] / (new_distribution[i] * Q[i, k])
     return min(1, ratio)
 
-def get_M2(new_distribution,d2, l, dir_constant):
+def get_M2(new_distribution,d2, l, dir_constant, detM1):
     """
     Metropolis - Hastings implementation to get M2
     """
@@ -43,6 +43,7 @@ def get_M2(new_distribution,d2, l, dir_constant):
     P = np.zeros((4,4))
     iteration = 0
     iter = True
+    dir_constant = (np.exp(-l))/(4*detM1) 
 
     while iter and iteration < 50:
         # Random Markov matrix generation
@@ -176,7 +177,7 @@ def generate_random_matrix(distribution, l):
 
     #print("M1 got")
     d2 = res * (1 / detM1)
-    M2 = get_M2(new_distribution,d2,l,dir_constant)
+    M2 = get_M2(new_distribution,d2,l,dir_constant,detM1)
 
     if not isinstance(M2, np.ndarray) and M2 == 0:
         return np.zeros((4,4))

@@ -18,7 +18,7 @@ def generate_random_matrix(distribution, l):
 
     M1, detM1, res, new_distribution = get_M1(distribution, dir_constant, exp_minus_l, sq_det_D)
     d2 = res * (1 / detM1)
-    M2 = get_M2(new_distribution,d2,dir_constant)
+    M2 = get_M2(new_distribution,d2,dir_constant,detM1,exp_minus_l)
 
     if not isinstance(M2, np.ndarray) and M2 == 0:
         return np.zeros((4,4))
