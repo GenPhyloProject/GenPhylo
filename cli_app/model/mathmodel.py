@@ -58,18 +58,17 @@ def get_M2(new_distribution,d2, l, dir_constant, detM1):
                 i = i + 1
 
         # Time reversible matrix generation
-        for i in range(4):
-            for j in range(4):
-                if i == j:
-                    sum = 0
-                    for k in range(4):
-                        if k != i:
-                            sum += (Q[i,k] * (1 - alpha(new_distribution,Q,i,k)))
-                    P[i,j] = Q[i,i] + sum
-                else:
-                    P[i,j] = Q[i,j]*alpha(new_distribution,Q,i,j)
-
-        assert (np.abs(np.sum(new_distribution - np.matmul(new_distribution,P)))) < 10**-6
+        while (np.abs(np.sum(new_distribution - np.matmul(new_distribution,P)))) < 10**-6:
+            for i in range(4):
+                for j in range(4):
+                    if i == j:
+                        sum = 0
+                        for k in range(4):
+                            if k != i:
+                                sum += (Q[i,k] * (1 - alpha(new_distribution,Q,i,k)))
+                        P[i,j] = Q[i,i] + sum
+                    else:
+                        P[i,j] = Q[i,j]*alpha(new_distribution,Q,i,j)
         
         # Adjust the matrix diagonalising (ensure matrix with determinant d2)
         vaps, _ = np.linalg.eig(P)
