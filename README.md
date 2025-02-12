@@ -6,7 +6,7 @@
 
 We introduce **GenPhylo**, an open-source Python module for simulating genetic data along a phylogeny avoiding the restriction of continuous-time Markov processes. **GenPhylo** uses directly a general Markov model and therefore naturally incorporates heterogeneity across lineages. 
 
-The module has been developed in Python3 and provides an algorithm that can be incorporated in other simulation software.
+The module has been developed in Python3 and provides an algorithm that can be incorporated in other simulation software.´
 
 ---
 
